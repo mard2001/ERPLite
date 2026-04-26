@@ -1,1 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
 @import "tailwindcss";
+
+@theme {
+  --color-background: #D5E3FC;        
+  --color-foreground: #B3FFF3;         
+
+  --color-card: #FFFFFF;             
+  --color-surface: #9EACC3;            
+
+  --color-primary-brighter: #89F5E7;           
+  --color-primary: #0D9488;           
+  --color-primary-foreground: #B3FFF3;
+
+  --color-secondary-brighter: #545F73;         
+  --color-secondary: #1E293B;         
+  --color-secondary-foreground: #D8E3FB;
+
+  --color-muted: #475569;             
+  --color-muted-foreground: #B9C7DF;
+
+  --color-border: #3C475A;
+
+  --color-highlight: #00867B;
+
+  --radius: 0.75rem;
+}
+
+@layer base{
+    *{
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        scrollbar-width: thin;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+    }
+}
+
+@layer components{
+    .loginDisplayImg{
+        background-image: linear-gradient(155deg, 
+                rgba(17, 28, 45, 1)0%, 
+                rgba(17, 28, 45, 0.95)25%, 
+                rgba(17, 28, 45, 0.75)45%, 
+                rgba(17, 28, 45, 0.65)55%, 
+                rgba(17, 28, 45, 0.95)75%,  
+                rgba(17, 28, 45, 1)100%
+            ), 
+            url(../public/loginDisplayPhoto1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@layer utilities{
+
+}
+
+
+
